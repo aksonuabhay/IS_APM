@@ -1,0 +1,23 @@
+Before building, setup the controller as given below:
+
+Go to controller/config/environment directory and create a file named interactivespaces.service.comm.serial.ext and copy the following
+
+path:/usr/share/java/RXTXcomm.jar
+package:gnu.io
+path:<Path containing IS_APM>/IS_APM/comm.mavlink.packet/Dependencies/org.mavlink.library.jar
+package:org.mavlink
+package:org.mavlink.messages
+path:<Path containing IS_APM>/IS_APM/comm.mavlink.packet/Dependencies/org.mavlink.util.jar
+package:org.mavlink.IMAVLinkMessage
+
+Copy interactivespaces-service-comm-serial-<version>.jar from extras/interactivespaces.service.comm.serial in controller to controller/lib/system/java
+
+Go to controller.conf in config/interactivespaces and add the following
+
+space.hardware.serial.port=<Your serial device>    For example /dev/ttyACM0
+To get a list of serial devices attached on ubuntu type ls /dev/tty* 
+ 
+
+
+
+

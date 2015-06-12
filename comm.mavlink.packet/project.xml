@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<project type="activity" builder="java">
+  <name>Comm Mavlink Packet</name>
+  <description>
+    Auto-generated activity for Comm Mavlink Packet
+  </description>
+
+  <identifyingName>comm.mavlink.packet</identifyingName>
+  <version>1.0.0</version>
+
+  <activity type="interactivespaces_native">
+    <name>comm.mavlink.packet</name>
+    <class>comm.mavlink.packet.CommMavlinkPacketActivity</class>
+
+    <configuration>
+       <property name="space.hardware.serial.port" required="true"/>
+      <property name="space.activity.log.level" required="false">
+        <value>info</value>
+      </property>
+    </configuration>
+
+  </activity>
+
+</project>
